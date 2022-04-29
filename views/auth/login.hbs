@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+
+</html><body class="text-center">
+    
+<main class="form-signin">
+  <form action="/auth/login" method="POST">
+    {{!-- <img class="mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> --}}
+    <h1 class="h3 mb-3 fw-normal">Log in</h1>
+
+    <div class="form-floating">
+      <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
+  
+  </form>
+</main>
+
+{{#if errorMessage}}
+   {{errorMessage}}
+{{/if}}
+    
+</body>
+
+
+
+
+{{!-- <form action="/auth/login" method="POST">
+   <label> Username
+      <input type="text" name="username">
+   </label>
+   <label> Password
+      <input type="password" name="password">
+   </label>
+
+   <button type="submit">Submit</button>
+</form>
+
+{{#if errorMessage}}
+   {{errorMessage}}
+{{/if}} --}}

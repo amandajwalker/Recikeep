@@ -1,0 +1,31 @@
+<h1>Create Recipe</h1>
+
+<form method="POST" action="/recipe/create">
+  <div><label for="recipeName">Name</label>
+    <input name="name" id="recipeName" type="text" /></div>
+  <div><label for="recipeImage">Photo</label>
+    <input name="imageUrl" id="recipeImage" type="text" /></div>
+  <div><label for="recipeDesription">Description</label>
+    <input name="description" id="recipeDescription" type="text" /></div>
+  <div><label for="recipePrepTime">Prep Time</label>
+    <input
+      name="prepTime"
+      id="recipePrepTime"
+      type="number"
+      min="1"
+      max="480"
+    /></div>
+  <div><label for="recipeCookTime">Cook Time</label>
+    <input
+      name="cookTime"
+      id="recipeCookTime"
+      type="number"
+      min="1"
+      max="480"
+    /></div>
+  <div><label for="recipeIngredients">Ingredients</label>
+    <input name="ingredients" id="recipeIngredients" type="text" /></div>
+  <div><label for="recipeInstructions">Instructions</label>
+    <input name="instructions" id="recipeInstructions" type="text" /></div>
+    <button type="submit">Create Recipe</button>
+</form>
