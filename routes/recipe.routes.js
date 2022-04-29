@@ -13,7 +13,7 @@ res.render('recipe/create.hbs')
 
 router.post('/create', (req, res)=>{
 var name = req.body.name;
-var imageUrl = req.body.image;
+var imageUrl = req.body.imageUrl;
 var description = req.body.description;
 var prepTime = req.body.prepTime;
 var cookTime = req.body.cookTime;
@@ -97,7 +97,7 @@ router.get("/:recipeId/edit", (req, res)=>{
 router.post("/:recipeId/edit", (req, res)=>{
     const recipeId = req.params.recipeId;
     var name = req.body.name;
-    var imageUrl = req.body.image;
+    var imageUrl = req.body.imageUrl;
     var description = req.body.description;
     var prepTime = req.body.prepTime;
     var cookTime = req.body.cookTime;
