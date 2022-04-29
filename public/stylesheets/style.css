@@ -1,18 +1,39 @@
 body {
   padding: 50px;
+  background: white;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00b7ff;
+  color: white;
 }
 
+
+/* 
 h1 {
   color: 15px;
+} */
+
+/* 
+create a recipe */
+.create-div{
+  width: 800px;
+  height: 500px;
+  margin-top: 20px;
+  padding-top: 40px;
+  display: inline-block;
+  background: black;
 }
 
-/* signup */
-
+.form-create{
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  margin-top: 2px;
+  padding-top: 40px;
+  display: inline-block;
+  justify-content: center;
+}
 
 
 /* //sign in */
@@ -21,4 +42,26 @@ h1 {
   height: 400px;
   margin-top: 20px;
   display: inline-block;
+  /* justify-content: center; */
 }
+
+
+
+/* signup */
+.form-signup{
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  display: inline-block;
+  justify-content: center
+
+}
+
+
+
+
+
+
+ /* .img-fluid{
+  max-width: 100%; 
+ }  */

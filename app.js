@@ -23,6 +23,15 @@ const projectName = "recikeep";
 
 app.locals.appTitle = `${capitalized(projectName)}`;
 
+app.use((req, res, next) => {
+  if (req.session.user) {
+    app.locals.email = req.session.user.email;
+  } else {
+    app.locals.email = undefined;
+  }
+  next();
+});
+
 // 👇 Start handling routes here
 const index = require("./routes/index.routes");
 app.use("/", index);
